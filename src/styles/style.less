@@ -1,0 +1,363 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Jost, sans-serif;
+  background-color: @main-bg-color;
+  color: white;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.main {
+  padding: 35px 0 15px;
+}
+
+.header {
+  margin-bottom: 60px;
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.menu-item {
+
+}
+
+.menu-item a {
+  font-weight: 700;
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+  margin-right: 30px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid transparent;
+  transition: all .3s;
+}
+
+.menu-item a:hover {
+  border-bottom: 2px solid @color-rose;
+  color: @color-rose
+}
+
+.menu-item a.active {
+  background: @main-color-rose;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.button {
+  border-radius: 4px;
+  width: 146px;
+  height: 50px;
+  font-size: 18px;
+  text-align: center;
+  color: #fff;
+  background: @main-color-rose;
+  border: 0;
+  cursor: pointer;
+}
+
+.button:hover {
+  box-shadow: 0px 0px 9px 2px @color-rose;
+}
+
+.main-content-1 {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+
+.main-content-name {
+  font-weight: 400;
+  font-size: 75px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 2px @color-rose; /* Для браузеров на базе WebKit */
+  margin-bottom: 60px;
+}
+
+.main-content-work {
+  font-family: Josefin Sans, sans-serif;
+  font-weight: 600;
+  font-size: 128px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  background: @main-color-rose;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.main-content-description {
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #f6f6f6;
+  z-index: 10;
+  margin-top: 10px;
+}
+
+.shadow {
+  height: 21px;
+  width: 100%;
+  border-radius: 100%;
+  background: @main-color-rose;
+  filter: blur(15px);
+  margin-top: -20px;
+  z-index: -1;
+}
+
+.main-content-networks {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin-right: 130px;
+}
+
+.network {
+  font-weight: 400;
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  background: @main-color-rose;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: 0 30px 15px;
+  border-right: 1px solid @color-rose;
+  cursor: pointer;
+}
+
+.network:hover {
+
+}
+
+.network:last-child {
+  border-right: none;
+}
+
+.line {
+  width: 1171px;
+  height: 1px;
+  background: @main-color-rose;
+}
+
+.about {
+  padding: 60px 0 45px;
+  background-color: @main-bg-light;
+}
+
+.about-title {
+  font-weight: 600;
+  font-size: 64px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #4543e8;
+  margin-bottom: 25px;
+}
+
+.about-text {
+  font-weight: 400;
+  font-size: 32px;
+  color: #000;
+  margin-bottom: 35px;
+}
+
+.services {
+  padding: 45px 0;
+}
+
+.services-title {
+  font-weight: 600;
+  font-size: 64px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  background: @main-color-rose;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.square {
+  width: 50px;
+  height: 50px;
+  border: 3px solid @color-rose;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.square::after {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 34px;
+  height: 34px;
+  border: 3px solid @color-rose;
+}
+
+.service-item {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  position: relative;
+  padding-bottom: 15px;
+  border-bottom: 1px solid @color-rose;
+  margin-top: 45px;
+}
+
+.service-item-name {
+  margin-top: 80px;
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #f6f6f6;
+}
+
+.service-item-description {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 120%;
+  color: #dbd7d7;
+  width: 345px;
+}
+
+.skills {
+  padding: 45px 0;
+}
+
+.skills-title {
+  font-weight: 600;
+  font-size: 64px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  text-align: center;
+  background: @main-color-rose;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 50px;
+}
+
+.skills-items {
+  //display: flex;
+  //flex-wrap: wrap;
+  //align-items: center;
+  //justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-row-gap: 80px;
+}
+
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  //margin: 50px;
+}
+
+.skill-item span {
+  margin-top: 25px;
+  font-weight: 400;
+  font-size: 24px;
+  letter-spacing: 0.14em;
+  text-align: center;
+}
+
+.works {
+  padding: 45px 0;
+}
+
+.works-title {
+  font-weight: 600;
+  font-size: 64px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  text-align: center;
+  background: @main-color-rose;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 20px;
+}
+
+.works-description {
+  font-weight: 600;
+  font-size: 36px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #f6f6f6;
+  padding-bottom: 20px;
+  border-bottom: 1px solid @color-rose;
+  margin: 0 auto;
+  text-align: center;
+  width: 270px;
+}
+
+.works-items {
+  padding-top: 60px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+}
+
+.work-item img {
+  width: 100%;
+}
+
+.work-item {
+  transition: scale .3s;
+}
+
+.work-item:hover {
+  scale: 1.1;
+}
+
+.contacts {
+  padding: 45px 0;
+}
+
+.contacts-title {
+  font-weight: 600;
+  font-size: 64px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  text-align: center;
+  background: @main-color-rose;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+@import "theme";
