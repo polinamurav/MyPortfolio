@@ -357,6 +357,151 @@ body {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  margin-bottom: 45px;
+}
+
+.contacts-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contacts-my {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+}
+
+.contact-my {
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  padding: 24px 30px;
+  width: 368px;
+  height: 117px;
+  box-sizing: border-box;
+  background: @main-color-rose;
+  margin-bottom: 20px;
+}
+
+.contact-my-svg {
+  width: 70px;
+  height: 70px;
+  background-color: @main-bg-color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  box-shadow: 0 0 24px 0 rgba(15, 16, 24, 0.42);
+}
+
+.contact-my-info {
+  margin-left: 20px;
+}
+
+.contact-my-info-title {
+  font-weight: 600;
+  font-size: 24px;
+  margin-bottom: 7px;
+}
+
+.contact-my-info-descr {
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.contacts-user-name {
+  font-weight: 600;
+  font-size: 48px;
+  letter-spacing: 0.02em;
+  color: #f6f6f6;
+  margin-bottom: 18px;
+}
+
+.send-message-form {
+  width: 700px;
+  //display: grid;
+  //grid-template-columns: repeat(2, minmax(250px, 335px));
+  //grid-template-rows: 1fr 1fr 1fr;
+  //grid-column-gap: 30px;
+  //grid-row-gap: 18px;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.form-input {
+  border: 1px solid #f4f5f7;
+  border-radius: 8px;
+  width: 335px;
+  height: 56px;
+  background-color: transparent;
+  color: white;
+  padding: 15px 30px;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.form-input::placeholder {
+  font-weight: 300;
+  font-size: 16px;
+  color: #f4f5f7;
+}
+
+.label-input-message {
+  font-family: Jost, sans-serif;
+  width: 700px;
+  height: 210px;
+  margin-top: 18px;
+}
+
+.button-form {
+  border-radius: 4px;
+  width: 407px;
+  height: 67px;
+  margin-top: 37px;
+  font-size: 20px;
+  margin-bottom: 33px;
+}
+
+
+.agree label {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  position: relative;
+}
+
+.checkbox {
+  border: 1px solid white;
+  width: 18px;
+  height: 18px;
+}
+
+.checkbox svg {
+  display: none;
+  width: 25px;
+  height: 20px;
+  margin-right: 2px;
+}
+
+.checkbox svg path {
+  fill: white;
+}
+
+.input-checkbox {
+  opacity: 0;
+  position: absolute;
+  top: 3px;
+  left: 105px;
+}
+
+.agree-text {
+  font-size: 14px;
+  font-family: Museo300, sans-serif;
+  text-align: start;
+  margin-left: 20px;
 }
 
 
