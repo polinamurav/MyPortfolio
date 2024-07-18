@@ -86,6 +86,7 @@ body {
   display: flex;
   align-items: start;
   justify-content: space-between;
+  overflow-x: hidden;
 }
 
 .main-content-name {
@@ -160,6 +161,23 @@ body {
   border-right: none;
 }
 
+.main-content-image {
+  overflow-x: hidden;
+  animation: myphoto 5s infinite .3s;
+}
+
+@keyframes myphoto {
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(7deg);
+  }
+  100% {
+    transform: rotate(-7deg);
+  }
+}
+
 .line {
   width: 1171px;
   height: 1px;
@@ -185,15 +203,20 @@ body {
   letter-spacing: 0.02em;
   text-transform: uppercase;
   text-align: center;
-  color: #4543e8;
+  //color: #4543e8;
+  background: linear-gradient(180deg, #6a77e7 0.98%, rgba(52, 65, 180, 0.68) 54.86%, #2534bd 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   margin-bottom: 25px;
 }
 
 .about-text {
   font-weight: 400;
-  font-size: 32px;
+  font-size: 25px;
   color: #000;
   margin-bottom: 35px;
+  text-align: justify;
 }
 
 .services {
@@ -239,7 +262,8 @@ body {
   position: relative;
   padding-bottom: 15px;
   border-bottom: 1px solid @color-rose;
-  margin-top: 45px;
+  width: 800px;
+  margin: 45px auto 0 auto;
 }
 
 .service-item-name {
