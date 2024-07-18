@@ -75,6 +75,7 @@ body {
   background: @main-color-rose;
   border: 0;
   cursor: pointer;
+  transition: all .3s;
 }
 
 .button:hover {
@@ -168,6 +169,14 @@ body {
 .about {
   padding: 60px 0 45px;
   background-color: @main-bg-light;
+}
+
+.button.download-cv {
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  padding: 15px;
+  box-sizing: border-box;
 }
 
 .about-title {
@@ -382,6 +391,13 @@ body {
   box-sizing: border-box;
   background: @main-color-rose;
   margin-bottom: 20px;
+  transition: all .3s;
+  color: white;
+  text-decoration: none;
+}
+
+.contact-my:hover {
+  box-shadow: 0px 0px 9px 2px @color-rose;
 }
 
 .contact-my-svg {
@@ -471,6 +487,7 @@ body {
   align-items: start;
   justify-content: center;
   position: relative;
+  cursor: pointer;
 }
 
 .checkbox {
