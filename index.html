@@ -33,7 +33,7 @@
                     </li>
                 </ul>
             </nav>
-            <button class="button">Контакты</button>
+            <button type="button" class="button">Контакты</button>
         </div>
     </header>
     <div class="main-content">
@@ -310,21 +310,23 @@
             </div>
             <div class="contacts-user">
                 <div class="contacts-user-name">Отправьте мне сообщение</div>
-                <form class="send-message-form" action="#">
+                <form class="send-message-form" action="#" name="submit-to-google-sheet">
                     <label>
-                        <input type="text" class="form-input" placeholder="Ваше имя">
+                        <input type="text" class="form-input" name="user_name" id="user_name" autocomplete="off" placeholder="Ваше имя" required>
+                        <div class="error-input">Необходимо ввести ваше имя</div>
                     </label>
                     <label>
-                        <input type="email" class="form-input" placeholder="Ваша почта">
+                        <input type="email" class="form-input" name="user_email" id="user_email" autocomplete="off" placeholder="Ваша почта" required>
+                        <div class="error-input">Необходимо ввести вашу почту</div>
                     </label>
                     <label>
-                        <textarea class="form-input label-input-message" placeholder="Ваше сообщение"></textarea>
+                        <textarea class="form-input label-input-message" name="user_comment" autocomplete="off" id="user_comment" placeholder="Ваше сообщение"></textarea>
                     </label>
-                    <button class="button button-form">Отправить заявку</button>
-                    <div class="agree">
+                    <button type="submit" class="button button-form" id="buttonApplication">Отправить заявку</button>
+                    <div class="agree" id="agree">
                         <label>
-                            <input class="input-checkbox" type="checkbox" id="checkboxInputPopUp">
-                            <div class="checkbox" id="checkboxPopup">
+                            <input class="input-checkbox" type="checkbox" id="checkboxInput">
+                            <div class="checkbox" id="checkbox">
                                 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                                      xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                      viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
@@ -367,7 +369,9 @@
 </g>
 </svg>
                             </div>
-                            <div class="agree-text">Нажимая на кнопку, я даю согласие на условие передачи данных
+                            <div class="agree-text">Нажимая на кнопку, я даю согласие на обработку персональных данных и
+                                соглашаюсь с
+                                <span>политикой конфиденциальности</span>
                             </div>
                         </label>
                     </div>
@@ -375,6 +379,10 @@
             </div>
         </div>
     </div>
+</div>
+
+<div class="loader-main">
+    <div class="loader"></div>
 </div>
 
 
