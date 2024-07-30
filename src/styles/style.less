@@ -75,11 +75,28 @@ body {
   background: @main-color-rose;
   border: 0;
   cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+  padding: 15px;
+  box-sizing: border-box;
   transition: all .3s;
 }
 
 .button:hover {
   box-shadow: 0px 0px 9px 2px @color-rose;
+}
+
+.button.transparent {
+  background: transparent;
+  border-radius: 10px;
+  border: 2px solid @color-rose;
+  transition: .3s ease all;
+}
+
+.button.transparent:hover {
+  background: @color-rose;
+  color: white;
+  box-shadow: none;
 }
 
 .main-content-1 {
@@ -154,7 +171,6 @@ body {
 }
 
 .network:hover {
-
 }
 
 .network:last-child {
@@ -195,6 +211,7 @@ body {
   text-align: center;
   padding: 15px;
   box-sizing: border-box;
+  width: 195px;
 }
 
 .about-title {
@@ -213,7 +230,7 @@ body {
 
 .about-text {
   font-weight: 400;
-  font-size: 25px;
+  font-size: 22px;
   color: #000;
   margin-bottom: 35px;
   text-align: justify;
@@ -369,11 +386,67 @@ body {
 }
 
 .work-item {
-  transition: scale .3s;
+  transition: .4s all;
+  position: relative;
+  overflow: hidden;
 }
 
-.work-item:hover {
-  scale: 1.1;
+//.work-item:hover {
+//  scale: 1.1;
+//}
+
+.work-item::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  //background: rgba(25, 0, 97, 0.85);
+  background: linear-gradient(180deg, #0A0123D8 0%, rgba(25, 0, 97, 0.89) 100%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(0, 100%);
+  transition: all .4s;
+}
+
+.work-item:hover::after {
+  transform: translate(0, 0);
+}
+
+.work-item:hover .work-item-hover {
+  opacity: 1;
+}
+
+.work-item-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  padding: 30px 20px;
+  opacity: 0;
+  transition: opacity .3s;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.work-item-title {
+  font-size: 22px;
+  margin-bottom: 30px;
+}
+
+.work-item-tools {
+  font-size: 18px;
+  color: #eaeffc;
+  //margin-bottom: 30px;
+}
+
+.work-item-actions {
+  margin-top: auto;
+}
+
+.work-item-website {
+  margin-right: 10px;
 }
 
 .contacts {
@@ -550,6 +623,20 @@ body {
   font-family: Museo300, sans-serif;
   text-align: start;
   margin-left: 20px;
+}
+
+.footer {
+  margin-top: 40px;
+  text-align: center;
+  padding: 40px 0;
+  border-top: 1px solid rgba(220, 220, 243, 0.81);
+  font-size: 16px;
+  line-height: 16px;
+  color: rgba(220, 237, 243, 0.76);
+}
+
+.footer-date {
+  margin-top: 10px;
 }
 
 
