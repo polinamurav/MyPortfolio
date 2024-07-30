@@ -314,7 +314,7 @@ body {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin-bottom: 50px;
+  margin-bottom: 60px;
 }
 
 .skills-items {
@@ -330,13 +330,14 @@ body {
 .skill-item {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   //margin: 50px;
+  height: 155px;
 }
 
 .skill-item span {
-  margin-top: 25px;
+  margin-top: auto;
   font-weight: 400;
   font-size: 24px;
   letter-spacing: 0.14em;
@@ -476,6 +477,7 @@ body {
   display: flex;
   align-items: start;
   flex-direction: column;
+  margin-right: 60px;
 }
 
 .contact-my {
@@ -532,23 +534,24 @@ body {
 }
 
 .send-message-form {
-  width: 700px;
-  //display: grid;
-  //grid-template-columns: repeat(2, minmax(250px, 335px));
-  //grid-template-rows: 1fr 1fr 1fr;
-  //grid-column-gap: 30px;
-  //grid-row-gap: 18px;
-  display: flex;
-  align-items: start;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  max-width: 700px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(250px, 335px));
+  //grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-rows: repeat(4, 56px);
+  grid-column-gap: 30px;
+  grid-row-gap: 18px;
+  //display: flex;
+  //align-items: start;
+  //justify-content: space-between;
+  //flex-wrap: wrap;
 }
 
 .form-input {
   border: 1px solid #f4f5f7;
   border-radius: 8px;
-  width: 335px;
-  height: 56px;
+  //width: 335px;
+  //height: 56px;
   background-color: transparent;
   color: white;
   padding: 15px 30px;
@@ -564,9 +567,11 @@ body {
 
 .label-input-message {
   font-family: Jost, sans-serif;
-  width: 700px;
-  height: 210px;
+  //width: 700px;
+  //height: 210px;
   margin-top: 18px;
+  grid-column: 1/3;
+  grid-row: 2 / 5;
 }
 
 .error-input {
@@ -580,11 +585,15 @@ body {
   border-radius: 4px;
   width: 407px;
   height: 67px;
-  margin-top: 37px;
+  //margin-top: 37px;
   font-size: 20px;
-  margin-bottom: 33px;
+  //margin-bottom: 33px;
+  grid-column: 1/3;
 }
 
+.agree {
+  grid-column: 1/3;
+}
 
 .agree label {
   display: flex;
