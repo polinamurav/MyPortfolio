@@ -9,7 +9,7 @@ html {
 
 body {
   font-family: Jost, sans-serif;
-  background-color: @main-bg-color;
+  background-color: #190061;
   color: white;
 }
 
@@ -55,12 +55,12 @@ body {
 }
 
 .menu-item a:hover {
-  border-bottom: 2px solid @color-rose;
-  color: @color-rose
+  border-bottom: 2px solid #fa7a7a;
+  color: #fa7a7a
 }
 
 .menu-item a.active {
-  background: @main-color-rose;
+  background: linear-gradient(180deg, #f79a9a 0.98%, #fa7a7a 54.86%, #f46464 100%);;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -72,7 +72,7 @@ body {
   font-size: 18px;
   text-align: center;
   color: #fff;
-  background: @main-color-rose;
+  background: linear-gradient(180deg, #f79a9a 0.98%, #fa7a7a 54.86%, #f46464 100%);;
   border: 0;
   cursor: pointer;
   display: inline-block;
@@ -83,18 +83,18 @@ body {
 }
 
 .button:hover {
-  box-shadow: 0px 0px 9px 2px @color-rose;
+  box-shadow: 0px 0px 9px 2px #fa7a7a;
 }
 
 .button.transparent {
   background: transparent;
   border-radius: 10px;
-  border: 2px solid @color-rose;
+  border: 2px solid #fa7a7a;
   transition: .3s ease all;
 }
 
 .button.transparent:hover {
-  background: @color-rose;
+  background: #fa7a7a;
   color: white;
   box-shadow: none;
 }
@@ -112,7 +112,7 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   -webkit-text-fill-color: transparent;
-  -webkit-text-stroke: 2px @color-rose; /* Для браузеров на базе WebKit */
+  -webkit-text-stroke: 2px #fa7a7a; /* Для браузеров на базе WebKit */
   margin-bottom: 60px;
 }
 
@@ -122,7 +122,7 @@ body {
   font-size: 128px;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  background: @main-color-rose;
+  background: linear-gradient(180deg, #f79a9a 0.98%, #fa7a7a 54.86%, #f46464 100%);;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -142,7 +142,7 @@ body {
   height: 21px;
   width: 100%;
   border-radius: 100%;
-  background: @main-color-rose;
+  background: linear-gradient(180deg, #f79a9a 0.98%, #fa7a7a 54.86%, #f46464 100%);;
   filter: blur(15px);
   margin-top: -20px;
   z-index: -1;
@@ -161,12 +161,12 @@ body {
   font-size: 13px;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  background: @main-color-rose;
+  background: linear-gradient(180deg, #f79a9a 0.98%, #fa7a7a 54.86%, #f46464 100%);;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   padding: 0 30px 15px;
-  border-right: 1px solid @color-rose;
+  border-right: 1px solid #fa7a7a;
   cursor: pointer;
 }
 
@@ -197,12 +197,12 @@ body {
 .line {
   width: 1171px;
   height: 1px;
-  background: @main-color-rose;
+  background: linear-gradient(180deg, #f79a9a 0.98%, #fa7a7a 54.86%, #f46464 100%);;
 }
 
 .about {
   padding: 60px 0 45px;
-  background-color: @main-bg-light;
+  background-color: #d8d8eb;
 }
 
 .button.download-cv {
@@ -245,7 +245,7 @@ body {
   font-size: 64px;
   letter-spacing: 0.02em;
   text-transform: uppercase;
-  background: @main-color-rose;
+  background: linear-gradient(180deg, #f79a9a 0.98%, #fa7a7a 54.86%, #f46464 100%);;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -256,7 +256,7 @@ body {
 .square {
   width: 50px;
   height: 50px;
-  border: 3px solid @color-rose;
+  border: 3px solid #fa7a7a;
   position: absolute;
   top: 0;
   left: 0;
@@ -269,7 +269,7 @@ body {
   left: 5px;
   width: 34px;
   height: 34px;
-  border: 3px solid @color-rose;
+  border: 3px solid #fa7a7a;
 }
 
 .service-item {
@@ -278,7 +278,7 @@ body {
   justify-content: space-between;
   position: relative;
   padding-bottom: 15px;
-  border-bottom: 1px solid @color-rose;
+  border-bottom: 1px solid #fa7a7a;
   width: 800px;
   margin: 45px auto 0 auto;
 }
@@ -310,7 +310,7 @@ body {
   letter-spacing: 0.02em;
   text-transform: uppercase;
   text-align: center;
-  background: @main-color-rose;
+  background: linear-gradient(180deg, #f79a9a 0.98%, #fa7a7a 54.86%, #f46464 100%);;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -354,7 +354,7 @@ body {
   letter-spacing: 0.02em;
   text-transform: uppercase;
   text-align: center;
-  background: @main-color-rose;
+  background: linear-gradient(180deg, #f79a9a 0.98%, #fa7a7a 54.86%, #f46464 100%);;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -368,7 +368,7 @@ body {
   text-transform: uppercase;
   color: #f6f6f6;
   padding-bottom: 20px;
-  border-bottom: 1px solid @color-rose;
+  border-bottom: 1px solid #fa7a7a;
   margin: 0 auto;
   text-align: center;
   width: 270px;
@@ -392,9 +392,6 @@ body {
   overflow: hidden;
 }
 
-//.work-item:hover {
-//  scale: 1.1;
-//}
 
 .work-item::after {
   content: '';
@@ -460,7 +457,7 @@ body {
   letter-spacing: 0.02em;
   text-transform: uppercase;
   text-align: center;
-  background: @main-color-rose;
+  background: linear-gradient(180deg, #f79a9a 0.98%, #fa7a7a 54.86%, #f46464 100%);;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -488,7 +485,7 @@ body {
   width: 368px;
   height: 117px;
   box-sizing: border-box;
-  background: @main-color-rose;
+  background: linear-gradient(180deg, #f79a9a 0.98%, #fa7a7a 54.86%, #f46464 100%);;
   margin-bottom: 20px;
   transition: all .3s;
   color: white;
@@ -496,13 +493,13 @@ body {
 }
 
 .contact-my:hover {
-  box-shadow: 0px 0px 9px 2px @color-rose;
+  box-shadow: 0px 0px 9px 2px #fa7a7a;
 }
 
 .contact-my-svg {
   width: 70px;
   height: 70px;
-  background-color: @main-bg-color;
+  background-color: #190061;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -670,7 +667,7 @@ body {
   aspect-ratio: 1;
   border-radius: 50%;
   padding: 1px;
-  background: conic-gradient(#0000 10%, @color-rose) content-box;
+  background: conic-gradient(#0000 10%, #fa7a7a) content-box;
   -webkit-mask: repeating-conic-gradient(#0000 0deg, #000 1deg 20deg, #0000 21deg 36deg),
   radial-gradient(farthest-side, #0000 calc(100% - var(--b) - 1px), #000 calc(100% - var(--b)));
   -webkit-mask-composite: destination-in;
@@ -685,4 +682,4 @@ body {
 }
 
 
-@import "theme";
+/*@import "../src/styles/theme";*/
