@@ -1,65 +1,348 @@
 @media screen and (max-width: 1229px) {
-  .container {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 
-  .main {
-    overflow: hidden;
-  }
+    .main {
+        overflow: hidden;
+    }
 
-  .main-content-work {
-    font-size: 110px;
-  }
+    .main-content-work {
+        font-size: 110px;
+    }
 
-  .contacts-user-name {
-    font-size: 40px;
-  }
+    .contacts-user-name {
+        font-size: 40px;
+    }
 }
 
 @media screen and (max-width: 1023px) {
-  .main-content-work {
-    font-size: 95px;
-  }
-  .about-title {
-    font-size: 50px;
-  }
-  .services-title {
-    font-size: 50px;
-  }
-  .skills-title {
-    font-size: 50px;
-  }
-  .works-title {
-    font-size: 50px;
-  }
-  .works-description {
-    font-size: 34px;
-  }
-  .contacts-title {
-    font-size: 50px;
-  }
-  .contacts-user-name {
-    font-size: 34px;
-  }
-  .contact-my {
-    padding: 16px 25px;
-    width: 335px;
-    height: auto;
-  }
-  .button-form {
-    width: 280px;
-  }
+    .main-content-work {
+        font-size: 95px;
+    }
+
+    .about-title {
+        font-size: 50px;
+    }
+
+    .services-title {
+        font-size: 50px;
+    }
+
+    .skills-title {
+        font-size: 50px;
+    }
+
+    .works-title {
+        font-size: 50px;
+    }
+
+    .works-description {
+        font-size: 34px;
+    }
+
+    .contacts-title {
+        font-size: 50px;
+    }
+
+    .contacts-user-name {
+        font-size: 34px;
+    }
+
+    .contacts-my {
+        margin-right: 25px;
+    }
+
+    .contact-my {
+        padding: 12px 20px;
+        width: 300px;
+        height: auto;
+    }
+
+    .button-form {
+        width: 280px;
+    }
 }
 
-@media screen and (max-width: 980px) {
-  .footer {
-    font-size: 10px;
-  }
+@media screen and (max-width: 915px) {
+    .main-content-name {
+        font-size: 65px;
+        margin-bottom: 30px;
+    }
+    .main-content-work {
+        font-size: 70px;
+    }
+    .skills-items {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .skill-item:last-child {
+        grid-column: 2 / 3;
+    }
+
+    .contacts-user-name {
+        font-size: 30px;
+    }
+
+    .send-message-form {
+        grid-column-gap: 0;
+        grid-template-columns: minmax(250px, 335px);
+    }
+
+    .form-input {
+        grid-column: 1 / 3;
+    }
+
+    .label-input-message {
+        margin-top: 0;
+        grid-row: 3 / 6;
+    }
+    .agree-text {
+        font-size: 12px;
+    }
 }
 
-@media screen and (max-width: 880px) {
-  .footer {
-    font-size: 5px;
-  }
+@media screen and (max-width: 767px) {
+    .footer {
+        font-size: 10px;
+    }
+    .main-content-1 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .main-content-name {
+        font-size: 55px;
+    }
+    .main-content-description {
+        margin-top: 20px;
+    }
+    .main-content-image img {
+        width: 80%;
+    }
+    .about-text {
+        font-size: 20px;
+    }
+
+    .service-item {
+        flex-direction: column;
+        align-items: center;
+    }
+    .service-item-name {
+        margin-top: 15px;
+        font-size: 20px;
+        margin-bottom: 60px;
+        margin-left: 35px;
+    }
+    .square {
+        left: 175px;
+    }
+
+    .main-content-work {
+        font-size: 50px;
+    }
+
+    .works-items {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contacts-info {
+        flex-direction: column;
+    }
+    .contacts-my {
+        order: 2;
+        margin-top: 60px;
+        margin-right: 0;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .contact-my {
+        margin: 20px;
+    }
+
+    .send-message-form {
+        grid-column-gap: 0;
+        grid-template-columns: 1fr;
+        max-width: 500px;
+    }
+    .contacts-user-name {
+        text-align: center;
+    }
+    .button-form {
+        justify-self: center;
+    }
+    .agree {
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .header .container {
+        justify-content: space-between;
+    }
+    .menu {
+        display: none;
+        position: fixed;
+        width: 55%;
+        height: 100%;
+        margin: 0;
+        top: 0;
+        left: 0;
+        background: rgba(28, 4, 4, 0.73);
+        z-index: 100;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 25px;
+    }
+
+    .menu ul a {
+        color: white;
+        font-size: 23px;
+    }
+
+    .menu-item {
+        margin: 25px 0;
+    }
+
+    .burger {
+        display: block;
+        width: 36px;
+    }
+
+    .menu.open {
+        display: flex;
+        align-items: center;
+    }
+
+    .menu .close {
+        display: block;
+        width: 24px;
+        height: 24px;
+        fill: white;
+        position: absolute;
+        top: 45px;
+        left: 20px;
+    }
+    .about-text {
+        font-size: 18px;
+    }
+    .skills-items {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .works-items {
+        grid-template-columns: minmax(200px, 500px);
+        justify-content: center;
+        grid-row-gap: 40px;
+    }
+    .about-title {
+        font-size: 44px;
+    }
+
+    .services-title {
+        font-size: 44px;
+    }
+
+    .skills-title {
+        font-size: 44px;
+    }
+
+    .works-title {
+        font-size: 44px;
+    }
+
+
+    .contacts-title {
+        font-size: 44px;
+        margin-bottom: 25px;
+    }
+    .contacts-user-name {
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 424px) {
+    .main-content-name {
+        font-size: 50px;
+    }
+    .main-content-work {
+        font-size: 45px;
+    }
+    .main-content-description {
+        margin-top: 15px;
+        font-size: 13px;
+    }
+    .about-title {
+        font-size: 37px;
+    }
+    .about-text {
+        font-size: 15px;
+    }
+
+    .services-title {
+        font-size: 37px;
+    }
+
+    .skills-title {
+        font-size: 37px;
+    }
+
+    .works-title {
+        font-size: 37px;
+    }
+
+    .works-description {
+        font-size: 25px;
+    }
+
+    .contacts-title {
+        font-size: 37px;
+    }
+    .skills-items {
+        grid-row-gap: 60px;
+    }
+    .contacts-user-name {
+        font-size: 25px;
+    }
+    .contact-my {
+        margin-bottom: 20px;
+        padding: 10px 20px;
+        width: 285px;
+        height: auto;
+    }
+    .contact-my-info-title {
+        font-size: 22px;
+    }
+    .contact-my-info {
+        margin-left: 9px;
+    }
+    .network {
+        padding: 0px 10px 9px;
+    }
+    .main-content-networks {
+        margin-right: 80px;
+    }
+}
+
+@media screen and (max-width: 374px) {
+    .skills-items {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .skills-title {
+        font-size: 33px;
+    }
 }
