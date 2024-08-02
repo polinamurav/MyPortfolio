@@ -130,14 +130,25 @@
         flex-direction: column;
         align-items: center;
     }
+    /*.service-item-name {*/
+    /*    margin-top: 15px;*/
+    /*    font-size: 20px;*/
+    /*    margin-bottom: 60px;*/
+    /*    margin-left: 35px;*/
+    /*}*/
     .service-item-name {
         margin-top: 15px;
         font-size: 20px;
-        margin-bottom: 60px;
-        margin-left: 35px;
+        margin-bottom: 35px;
+        /* margin-left: 35px; */
+        text-align: center;
+        max-width: 265px;
+    }
+    .service-item-description {
+        text-align: center;
     }
     .square {
-        left: 175px;
+        left: 0px;
     }
 
     .main-content-work {
@@ -189,7 +200,7 @@
     .menu {
         display: none;
         position: fixed;
-        width: 55%;
+        width: 63%;
         height: 100%;
         margin: 0;
         top: 0;
@@ -200,11 +211,12 @@
 
     .menu ul {
         flex-direction: column;
-        align-items: center;
+        align-items: start;
         justify-content: flex-start;
         margin-left: auto;
         margin-right: auto;
-        margin-top: 25px;
+        /*margin-top: 25px;*/
+        margin-top: 90px;
     }
 
     .menu ul a {
@@ -344,5 +356,25 @@
     }
     .skills-title {
         font-size: 33px;
+    }
+    .main-content-name {
+        font-size: 45px;
+    }
+    .main-content-work {
+        font-size: 40px;
+    }
+    .menu ul {
+        align-items: start;
+        margin-left: 60px;
+         margin-right: 0;
+    }
+    .service-item-name {
+        margin-left: 35px;
+    }
+    .agree-text {
+        margin-left: 26px;
+    }
+    .contacts {
+        overflow-x: hidden;
     }
 }
