@@ -15,6 +15,11 @@
     .contacts-user-name {
         font-size: 40px;
     }
+    .button.transparent {
+        padding: 11px;
+        width: 130px;
+        height: 42px;
+    }
 }
 
 @media screen and (max-width: 1023px) {
@@ -63,6 +68,25 @@
     .button-form {
         width: 280px;
     }
+
+    .work-item-hover {
+        padding: 15px 12px;
+    }
+    .work-item-title {
+        font-size: 19px;
+        margin-bottom: 15px;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .button.transparent {
+        padding: 8px 3px;
+        width: 120px;
+        height: 35px;
+    }
+    .work-item-website {
+        margin-right: 5px;
+    }
 }
 
 @media screen and (max-width: 915px) {
@@ -87,8 +111,14 @@
     }
 
     .send-message-form {
-        grid-column-gap: 0;
-        grid-template-columns: minmax(250px, 335px);
+        /*grid-column-gap: 0;*/
+        /*grid-template-columns: minmax(250px, 335px);*/
+        display: flex;
+        flex-direction: column;
+        max-width: 500px;
+    }
+    .button-form {
+        align-self: center;
     }
 
     .form-input {
@@ -97,10 +127,38 @@
 
     .label-input-message {
         margin-top: 0;
-        grid-row: 3 / 6;
+        /*grid-row: 3 / 6;*/
+        height: 125px;
+        box-sizing: border-box;
+
     }
     .agree-text {
         font-size: 12px;
+    }
+    .works-items {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .work-item-hover {
+        padding: 30px 20px;
+    }
+
+    .work-item-title {
+        font-size: 22px;
+        margin-bottom: 30px;
+    }
+
+    .work-item-tools {
+        font-size: 18px;
+    }
+
+    .work-item-website {
+        margin-right: 10px;
+    }
+    .button.transparent {
+        width: 146px;
+        height: 50px;
+        font-size: 18px;
+        padding: 15px;
     }
 }
 
@@ -155,10 +213,6 @@
         font-size: 50px;
     }
 
-    .works-items {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
     .contacts-info {
         flex-direction: column;
     }
@@ -191,6 +245,18 @@
         margin-left: auto;
         margin-right: auto;
     }
+    .button.transparent {
+        padding: 11px;
+        width: 130px;
+        height: 42px;
+    }
+    .work-item-hover {
+        padding: 15px 12px;
+    }
+    .work-item-title {
+        font-size: 19px;
+        margin-bottom: 15px;
+    }
 }
 
 @media screen and (max-width: 650px) {
@@ -205,7 +271,7 @@
         margin: 0;
         top: 0;
         left: 0;
-        background: rgba(28, 4, 4, 0.73);
+        background: rgba(28, 4, 4, 0.85);
         z-index: 100;
     }
 
@@ -282,6 +348,28 @@
     .contacts-user-name {
         font-size: 28px;
     }
+    .work-item-hover {
+        padding: 30px 20px;
+    }
+
+    .work-item-title {
+        font-size: 22px;
+        margin-bottom: 30px;
+    }
+
+    .work-item-tools {
+        font-size: 18px;
+    }
+
+    .work-item-website {
+        margin-right: 10px;
+    }
+    .button.transparent {
+        width: 146px;
+        height: 50px;
+        font-size: 18px;
+        padding: 15px;
+    }
 }
 
 @media screen and (max-width: 424px) {
@@ -344,6 +432,18 @@
     }
     .main-content-networks {
         margin-right: 80px;
+    }
+    .button.transparent {
+        padding: 11px;
+        width: 120px;
+        height: 42px;
+    }
+    .work-item-hover {
+        padding: 15px 12px;
+    }
+    .work-item-title {
+        font-size: 19px;
+        margin-bottom: 15px;
     }
 }
 

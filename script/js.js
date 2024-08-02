@@ -100,3 +100,35 @@ function errorValidation(nameInput, emailInput, commentInput, checkbox) {
 
     return hasError;
 }
+
+// $('.work-item').each(function () {
+//     $(this).on('click', function () {
+//         let workHoverElement = $(this).find('.work-item-hover');
+//         let currentOpacity = workHoverElement.css('opacity');
+//         if (currentOpacity === 1) {
+//             workHoverElement.css('opacity', 0);
+//         } else {
+//             workHoverElement.css('opacity', 1);
+//         }
+//
+//     })
+// })
+$('.work-item').each(function () {
+    $(this).on('click', function () {
+        var $workItem = $(this);
+        var $hover = $workItem.find('.work-item-hover');
+        var currentOpacity = $hover.css('opacity');
+
+        // Переключаем opacity и transform
+        if (currentOpacity == 1) {
+            $hover.css('opacity', 0);
+            $workItem.removeClass('show-after'); // Скрыть псевдоэлемент
+        } else {
+            $hover.css('opacity', 1);
+            $workItem.addClass('show-after'); // Показать псевдоэлемент
+        }
+
+        // Переключение класса для работы с opacity
+        // $workItem.toggleClass('show-hover');
+    });
+});

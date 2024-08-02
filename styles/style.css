@@ -394,12 +394,10 @@ body {
   overflow: hidden;
 }
 
-
 .work-item::after {
   content: '';
   width: 100%;
   height: 100%;
-  //background: rgba(25, 0, 97, 0.85);
   background: linear-gradient(180deg, #0A0123D8 0%, rgba(25, 0, 97, 0.89) 100%);
   position: absolute;
   top: 0;
@@ -408,9 +406,13 @@ body {
   transition: all .4s;
 }
 
-.work-item:hover::after {
+.work-item.show-after:hover::after {
   transform: translate(0, 0);
 }
+
+/*.work-item.show-after::after {*/
+/*  transform: translate(0, 0); !* Показать псевдоэлемент *!*/
+/*}*/
 
 .work-item:hover .work-item-hover {
   opacity: 1;
@@ -438,7 +440,7 @@ body {
 .work-item-tools {
   font-size: 18px;
   color: #eaeffc;
-  //margin-bottom: 30px;
+  /*//margin-bottom: 30px;*/
 }
 
 .work-item-actions {
@@ -575,8 +577,8 @@ body {
 
 .error-input {
   color: red;
-  margin-top: 12px;
-  margin-bottom: 15px;
+  /*margin-top: 12px;*/
+  /*margin-bottom: 15px;*/
   display: none;
 }
 
