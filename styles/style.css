@@ -394,6 +394,13 @@ body {
   overflow: hidden;
 }
 
+.work-item svg {
+    position: absolute;
+    bottom: 10px;
+    right: 5px;
+    transform: rotate(90deg);
+}
+
 .work-item::after {
   content: '';
   width: 100%;
